@@ -10,3 +10,4 @@ function converterParaInteiro(str) {
 }
 
 module.exports = converterParaInteiro;
+console.log("hello world");
