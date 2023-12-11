@@ -15,5 +15,6 @@ function compile(calculo) {
             operador = iterator;
         }
     }
-    
+    return execOperacao(num1, num2, operador);
+
 }
