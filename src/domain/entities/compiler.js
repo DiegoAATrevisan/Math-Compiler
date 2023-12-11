@@ -15,6 +15,9 @@ function compile(calculo) {
             operador = iterator;
         }
     }
-    return execOperacao(num1, num2, operador);
-
+    if (num1 == "" || num2 == "" || operador == "") {
+        throw new Error("Erro de sintaxe");
+    } else {
+        return execOperacao(num1, num2, operador);
+    }
 }
