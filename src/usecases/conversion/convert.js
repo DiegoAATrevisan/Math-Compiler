@@ -1,4 +1,4 @@
-function converterParaInteiro(str) {
+export function converterParaInteiro(str) {
     const validarSeContemNumero = require('.usecases/Validator.js')
 
     for (let index = 0; index < str.length; index++) {
@@ -8,6 +8,3 @@ function converterParaInteiro(str) {
     }
     return str;
 }
-
-module.exports = converterParaInteiro;
-console.log("hello world");

@@ -1,4 +1,4 @@
-function validarSeContemNumero(str) {
+export function validarSeContemNumero(str) {
     const regex = /\d/;
     if (regex.test(str)) {
         return true;
@@ -6,5 +6,3 @@ function validarSeContemNumero(str) {
         return false;
     }
 }
-
-module.exports = validarSeContemNumero;

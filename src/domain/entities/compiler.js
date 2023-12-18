@@ -1,6 +1,7 @@
-function compile(calculo) {
-    const converterParaInteiro = require('./usecases/conversion/Convert.js');
-    const validarSeContemNumero = require('./usecases/conversion/Validator.js')
+import { converterParaInteiro } from "../../usecases/conversion/convert";
+import { validarSeContemNumero } from "../../usecases/detector/validator";
+import { execOperacao } from "../services/Calculator";
+export function compile(calculo) {
     calculo = (calculo.split(""));
     calculo = converterParaInteiro(calculo);
     let num1;

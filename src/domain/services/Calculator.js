@@ -1,4 +1,4 @@
-function execOperacao(num1, num2, operador) {
+export function execOperacao(num1, num2, operador) {
     switch (operador) {
         case "+":
             return soma(num1, num2);
