@@ -1,6 +1,6 @@
-import { converterParaInteiro } from "../../usecases/conversion/convert";
-import { validarSeContemNumero } from "../../usecases/detector/validator";
-import { execOperacao } from "../services/Calculator";
+import { converterParaInteiro } from "../../usecases/conversion/convert.mjs";
+import { validarSeContemNumero } from "../../usecases/detector/validator.mjs";
+import { execOperacao } from "../services/Calculator.mjs";
 export function compile(calculo) {
     calculo = (calculo.split(""));
     calculo = converterParaInteiro(calculo);
